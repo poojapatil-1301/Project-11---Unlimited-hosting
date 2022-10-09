@@ -14,17 +14,29 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script>
+      function toggleMenu() {
+        var x = document.getElementById("navigation");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+  </script>
+
     <title>Document</title>
   </head>
   <body>
     <div class="container ">
       <section aria-label="navbar">
         <nav class="navbar-container">
-          <div>
+          <div class="logo-img">
             <img src="./assets/Logo.png" alt="brand-logo" />
           </div>
-          <div class="grow-list">
-            <ul class="list">
+
+          <div class="page-header__toggle grow-list" onclick="toggleMenu()">☰
+        <ul id="navigation" style="display:none;" class="ul-list nav-links navigation navigation--visible ">
               <li class="list-item">Home</li>
               <li class="list-item">Domain</li>
               <li class="list-item">Hosting</li>
@@ -32,7 +44,19 @@
               <li class="list-item">Pricing</li>
               <li class="list-item">About us</li>
             </ul>
-          </div>
+        </div>
+         <div class="grow-list page-header__bottom">
+          <ul class="ul-list">
+              <li class="list-item">Home</li>
+              <li class="list-item">Domain</li>
+              <li class="list-item">Hosting</li>
+              <li class="list-item">Features</li>
+              <li class="list-item">Pricing</li>
+              <li class="list-item">About us</li>
+          </ul>
+        </div>
+
+
           <div class="button-group">
             <button class="nav-button">Register Now</button>
           </div>
@@ -82,7 +106,7 @@
           <div>
             <h2 class="heading-text">
             <div>Number 1 Technical Support in Indoneia</div>
-                     </h2>
+            </h2>
             <p class="description">
               Contact Naigahoster`s Customer Success Agent at any time when there is a problem with your website. No need to wait long, your problem will be resolved quickly and in real-time via Intercoms live-chat. 
             </p>
@@ -203,14 +227,12 @@
         </div>
       </div>
 
-
-        
       </section>
     
     </div>
     
 
-    <div class="plan-bg py-50 ">
+    <div class="plan-bg py-50 container">
       <h2 class="price-text text-center">
         <div>Flexible & Transparant Pricing</div>
        </h2>
@@ -319,7 +341,7 @@
       <h2 class="testimonial-text text-center">
         <div>Flexible & Transparant Pricing</div>
        </h2>
-      <div class="d-flex">
+      <div class="d-md-flex d-block">
       <div class="testimonial-container">
         <p class="testimonial">
           I've worked with literally hundreds of HTML/CSS developers and I have to
@@ -363,7 +385,7 @@
         </div>
       </div>
     </div>
-    <div class="d-flex">
+    <div class=" d-md-flex d-block">
       <div class="testimonial-container">
         <p class="testimonial">
           I've worked with literally hundreds of HTML/CSS developers and I have to
@@ -407,6 +429,49 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
+    <div class="footer">
+        <div class="container">
+            <div class="product-section">
+             <div class="media-Section">
+            <img src="./assets/Logo.png" class="img-logo" alt="Logo" />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, quas!</p>
+        </div>
+            <div class="product">
+                <h2>Menu</h2>
+                <p>Home</p>
+                <p>Covid19</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="product">
+                <h2>Links</h2>
+                <p>Partners</p>
+                <p>Blog</p>
+                <p>Press</p>
+            </div>
+            <div class="product">
+                <h2>Overview</h2>
+                <p>Terms & conditions</p>
+                <p>FAQ</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="social-media">
+                <div class="circle">
+                    <img src="./assets/facebook.png" alt="facebook" >
+                </div>
+                <div class="circle">
+                    <img src="./assets/instagram.png" alt="facebook">
+                </div>
+                <div class="circle">
+                    <img src="./assets/twitter.png" alt="twitter">
+                </div>
+                <div class="circle">
+                    <img src="./assets/envelope.png" alt="envelope" width="30px">
+                </div>
+
+            </div>
+        </div>
+</div>
+    </div>
   </body>
 </html>
